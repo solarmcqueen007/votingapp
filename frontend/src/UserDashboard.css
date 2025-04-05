@@ -1,0 +1,152 @@
+/* UserDashboard.css */
+
+.user-dashboard {
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .user-dashboard h2 {
+    font-size: 26px;
+    color: #222;
+  }
+  
+  .voting-status {
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .voting-status.open {
+    background: #e9f7ef;
+    color: #2e7d32;
+  }
+  
+  .voting-status.closed {
+    background: #fdecea;
+    color: #c62828;
+  }
+  
+  .timer {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .vote-info p {
+    font-size: 16px;
+  }
+  
+  .party-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  .party-card {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .party-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .party-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .party-leader {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .voted-badge {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .feedback-message {
+    text-align: center;
+    font-weight: bold;
+    color: #c62828;
+  }
+  
+  .logout-button {
+    align-self: center;
+    background: #6c757d;
+  }
+  
+  .logout-button:hover {
+    background: #495057;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .user-dashboard {
+      padding: 20px;
+    }
+  
+    .party-card {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .party-details {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .results-section {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #f0f8ff;
+    border-radius: 12px;
+  }
+  
+  .result-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .result-list li {
+    padding: 6px 0;
+    font-weight: bold;
+  }
+  .user-uid {
+    font-size: 0.95rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: #555;
+  }  
